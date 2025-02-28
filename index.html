@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Movie List</h1>
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search by title...">
+        <select id="sort">
+            <option value="title">Sort by Title</option>
+            <option value="release_year">Sort by Year</option>
+            <option value="box_office">Sort by Box Office</option>
+        </select>
+        <div class="year-filter">
+            <label for="startYear" class="label">Filter by Year Range:</label><br>
+            <select id="startYear">
+                <option value="">Select Start Year</option>
+            </select>
+            <select id="endYear">
+                <option value="">Select End Year</option>
+            </select>
+        </div>
+    </div>
+    <div class="movie-list" id="movieList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
